@@ -1,0 +1,7 @@
+services:
+  ruby_app:
+    image: ruby:3.1
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: bash -c "bundle install && rspec"
